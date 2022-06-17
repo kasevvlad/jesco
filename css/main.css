@@ -1,0 +1,30 @@
+@import 'fonts.css';
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'dmsans';
+    font-weight: 400;
+}
+
+
+*::before,
+*::after{
+  font-family: 'icons';
+}
+.f300{font-weight: 300;}
+.icon-search::before{
+    content: '\f002';
+}
+.icon-settings::before{
+    content: '\f013';
+}
+.icon-heart::before{
+    content: '\f004';
+}
+.icon-shop::before{
+    content: '\f290';
+}
