@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
 </head>
 <body>
+    <!-- navbar -->
     <nav class="navbar container-fluid d-flex align-items-center">
         <a href="#!" class="navbar__logo">
             <img src="images/logo.png" alt="">
@@ -25,11 +26,168 @@
             <a href="#!" class="icon-search"></a>
             <a href="#!" class="icon-settings"></a>
             <a href="#!" class="icon-heart"></a>
-            <a href="#!" class="icon-shop"></a>
+            <a href="#!" class="icon-shop"><span>0</span></a>
         </div>
     </nav>
+    <!-- navbar end -->
+    <!-- banner -->
+    <div class="banner container-fluid d-flex align-items-center">
+        <img src="images/banner_img.png" alt="">
+        <div class="banner__text">
+            <h1>Any variation thats fits your imagination</h1>
+            <p>The Powerful Theme You Can Trust</p>
+        </div>
+    </div>
+    <!-- banner end -->
+    <!-- cards -->
+    <div class="cards container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="card1__content d-flex align-items-end">
+                    <div class="card__content--text d-flex flex-column justify-content-center">
+                        <p>Women Tops</p>
+                        <span>From world’s top designer</span>
+                        <a href="#!">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                <div class="card2__content d-flex align-items-end">
+                    <div class="card__content--text d-flex flex-column justify-content-center">
+                        <p>Men Jacket</p>
+                        <span>Up to 70% off on selected item</span>
+                        <a href="#!">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="row mt-4">
+            <div class="col-12 col-lg-6">
+                <div class="card3__content d-flex align-items-end">
+                    <div class="card__content--text d-flex flex-column justify-content-center">
+                        <p>Accessories</p>
+                        <span>Add finishing touch to your outfit</span>
+                        <a href="#!">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                <div class="card4__content d-flex align-items-end">
+                    <div class="card__content--text d-flex flex-column justify-content-center">
+                        <p>Shoes</p>
+                        <span>Find your perfet outfitr</span>
+                        <a href="#!">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>       
+ <!-- cards end -->
+ <!-- tab content -->
+    <div class="news-tabs container d-flex flex-column justify-content-center">
+       <h2>Best Seller</h2>
+       <div class="tabs__button">
+           <div class="colls container">
+            <div class="tabs__items d-flex align-items-center">
+                <div class="tabs__item tablinks tabs__active" onclick="openTab(event, 'All')">
+                All
+                </div>
+                <div class="tabs__item tablinks" onclick="openTab(event, 'Men')">
+                Men
+                </div>
+                <div class="tabs__item tablinks" onclick="openTab(event, 'Women')">
+                Women
+                </div>
+                <div class="tabs__item tablinks" onclick="openTab(event, 'Kids')">
+                Kids
+                </div>
+                <div class="tabs__item tablinks" onclick="openTab(event, 'Clothes')">
+                Clothes
+                </div>
+                <div class="tabs__item tablinks" onclick="openTab(event, 'Shoes')">
+                Shoes
+                </div>
+                <div class="tabs__item tablinks" onclick="openTab(event, 'Bags')">
+                Bags
+                </div>
+                <div class="tabs__item tablinks" onclick="openTab(event, 'Accesories')">
+                Accesories
+                </div>
+            </div>
+           </div>
+           <img src="images/Line 1.png" alt="">
+           <div id="All" class="tabcontent" style="display: block;">
+               <!-- tab content -->
+               <div class="tab_content1 container-fluid">
+                   <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="sale">
+                            <img src="images/seller__img1.png" alt="">
+                            <p>SALE</p>
+                            <div class="icon-heart"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 hot">
+                        <img src="images/seller__img2.png" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 just">
+                        <img src="images/seller__img3.png" alt="">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 sold-out">
+                        <img src="images/seller__img4.png" alt="">
+                    </div>
+                   </div>
+               </div>
+           </div>
+           <div id="Men" class="tabcontent">
+            <!-- tab content -->
+            <div class="tab_content1">
+                2
+            </div>
+           </div>
+           <div id="Women" class="tabcontent">
+            <!-- tab content -->
+            <div class="tab_content1">
+                3
+            </div>
+           </div>
+           <div id="Kids" class="tabcontent">
+            <!-- tab content -->
+            <div class="tab_content1">
+                3
+            </div>
+           </div>
+           <div id="Clothes" class="tabcontent">
+            <!-- tab content -->
+            <div class="tab_content1">
+                3
+            </div>
+           </div>
+           <div id="Shoes" class="tabcontent">
+            <!-- tab content -->
+            <div class="tab_content1">
+                3
+            </div>
+           </div>
+           <div id="Bags" class="tabcontent">
+            <!-- tab content -->
+            <div class="tab_content1">
+                3
+            </div>
+           </div>
+           <div id="Accesories" class="tabcontent">
+            <!-- tab content -->
+            <div class="tab_content1">
+                3
+            </div>
+           </div>
+       
+       </div>
+    </div>
+ <!-- tab content end -->
 
 
 
+ <script src="main.js"></script>
 </body>
 </html>
