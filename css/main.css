@@ -28,3 +28,16 @@
 .icon-shop::before{
     content: '\f290';
 }
+.navbar__nav{
+    gap: 40px;
+}
+.navbar__nav a{
+    color: #333333;
+    font-family: 'dmsans';
+    font-size: 18px;
+    line-height: 23px;
+}
+.navbar__nav a:hover{
+    font-family: 'dmsans';
+    font-weight: 500;
+}
