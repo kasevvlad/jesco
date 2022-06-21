@@ -64,23 +64,7 @@
     border-radius: 50%;
     background: #111111;
 }
-/* banner */
-.banner{
-    background: #CFDEE2;
-}
-.banner__text h1{
-    max-width: 623px;
-    color: #000000;
-    font-family: 'montserrat';
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 69px;
-}
-.banner__text p{
-    color: #000000;
-    font-size: 20px;
-    line-height: 26px;
-}
+
 /* cards */
 .cards{
     margin-top: 45px;
@@ -149,8 +133,8 @@
 .tabcontent{
     display: none;
 }
-.colls img{
-    margin: 0 auto;
+.tabcontent.active{
+    display: block;
 }
 .tabs__items{
     gap: 40px;
@@ -172,9 +156,8 @@
     font-family: 'poppins';
 }
 
-.sale img{
+.sale{
     position: relative;
-    z-index: 1;
 }
 .sale p{
     position: absolute;
@@ -187,9 +170,189 @@
     padding: 3px 1px;
     background: #E32C37;
     top: 0;
-    right: 0;
-    z-index: 5;
+    left: 0;
 }
-.icon-heart{
+.mesto{
     position: absolute;
 }
+.icon-heart{
+    padding: 8px 7px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    top: 29px;
+    right: 10px;
+    color: #7C7C7C;
+}
+.sale_text p{
+    color: #444444;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.sale_text span{
+    color: #F88787;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+.hot{
+    position: relative;
+}
+.hot p{
+    position: absolute;
+    color: #FFFFFF;
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.26px;
+    padding: 3px 1px;
+    background: #E9A400;
+    top: 0;
+    left: 0;
+}
+.hot_text p{
+    color: #444444;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.hot_text span{
+    color: #444444;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+.just{
+    position: relative;
+}
+.just_text p{
+    color: #444444;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.ju_text span{
+    color: #444444;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+.sold-out{
+    position: relative;
+}
+.sold-out p{
+    position: absolute;
+    color: #FFFFFF;
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.26px;
+    padding: 3px 1px;
+    background: #000000;
+    top: 0;
+    left: 0;
+}
+.sold-out_text p{
+    color: #444444;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.sold-out_text span{
+    color: #444444;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+/*  sale items */
+.items{
+    margin-top: 130px;
+}
+.item{
+    background: #F0F0F0;
+}
+.item__text{
+    margin-left: 40px;
+}
+.item__text p{
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+.item__text h5{
+    font-family: 'montserrat';
+    font-weight: 600;
+    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 14px;
+    margin-bottom: 40px;
+}
+.item__text a{
+    font-weight: 700;
+    color: #000000;
+    font-size: 16px;
+    line-height: 20px;
+}
+.item__text span{
+    font-weight: 700;
+    color: #000000;
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid #484849;
+}
+/* banner */
+.swiper-slide{
+    background: #CFDEE2;
+}
+.banner__text h1{
+    width: 100%;
+    max-width: 623px;
+    color: #000000;
+    font-family: 'montserrat';
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 69px;
+}
+.banner__text p{
+    color: #000000;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        max-width: 535px;
+      }
