@@ -25,6 +25,9 @@
 .icon-heart::before{
     content: '\f004';
 }
+.icon-sale-heart::before{
+    content: '\f004';
+}
 .icon-shop::before{
     content: '\f290';
 }
@@ -64,7 +67,26 @@
     border-radius: 50%;
     background: #111111;
 }
-
+.icon-search:hover{
+    color: red;
+    width: 18px;
+    height: 18px;
+}
+.icon-shop:hover{
+    color: red;
+    width: 18px;
+    height: 18px;
+}
+.icon-heart:hover{
+    color: red;
+    width: 18px;
+    height: 18px;
+}
+.icon-settings:hover{
+    color: red;
+    width: 18px;
+    height: 18px;
+}
 /* cards */
 .cards{
     margin-top: 45px;
@@ -136,6 +158,9 @@
 .tabcontent.active{
     display: block;
 }
+.tabs__item.active{
+    color: red;
+}
 .tabs__items{
     gap: 40px;
     justify-content: center;
@@ -143,6 +168,7 @@
 }
 
 .tabs__item{
+    cursor: pointer;
     color: #686060;
     font-family: 'poppins';
     font-size: 24px;
@@ -167,22 +193,34 @@
     font-size: 12px;
     line-height: 17px;
     letter-spacing: 0.26px;
-    padding: 3px 1px;
+    padding: 3px 1.5px;
     background: #E32C37;
     top: 0;
     left: 0;
+    cursor: pointer;
+}
+.sale p:hover{
+    padding: 6px 3px;
+    font-size: 18px;
 }
 .mesto{
     position: absolute;
 }
-.icon-heart{
+.icon-sale-heart{
     padding: 8px 7px;
     background: #FFFFFF;
     border-radius: 50%;
     top: 29px;
     right: 10px;
-    color: #7C7C7C;
+    color: red;
+    cursor: pointer;
 }
+.icon-sale-heart:hover{
+    background: red;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
 .sale_text p{
     color: #444444;
     font-size: 18px;
@@ -211,6 +249,11 @@
     background: #E9A400;
     top: 0;
     left: 0;
+    cursor: pointer;
+}
+.hot p:hover{
+    padding: 6px 3px;
+    font-size: 18px;
 }
 .hot_text p{
     color: #444444;
@@ -235,6 +278,7 @@
     margin-top: 16px;
     margin-bottom: 10px;
 }
+
 .ju_text span{
     color: #444444;
     font-weight: 500;
@@ -256,6 +300,11 @@
     background: #000000;
     top: 0;
     left: 0;
+    cursor: pointer; 
+}
+.sold-out p:hover{
+    padding: 6px 3px;
+    font-size: 18px;
 }
 .sold-out_text p{
     color: #444444;
@@ -326,7 +375,6 @@
     line-height: 26px;
 }
 
-
       .swiper {
         width: 100%;
         height: 100%;
@@ -356,3 +404,5 @@
         /* object-fit: cover; */
         max-width: 535px;
       }
+/* arrivals */
+
